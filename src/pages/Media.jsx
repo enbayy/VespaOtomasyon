@@ -94,27 +94,29 @@ const Media = () => {
             {selectedMedia && (
                 <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
                     <div className="relative max-w-4xl w-full px-4">
-                        <button
-                            className="absolute top-2 right-2 z-10 text-white bg-black/60 p-1 rounded-full hover:text-red-500 transition-colors"
-                            onClick={closeMedia}
-                        >
-                            <X size={28} />
-                        </button>
                         <div className="w-full flex justify-center items-center">
-                            {selectedMedia.type === 'image' ? (
-                                <img
-                                    src={selectedMedia.src}
-                                    alt="Büyütülmüş"
-                                    className="max-w-full max-h-[80vh] rounded-lg shadow-lg"
-                                />
-                            ) : (
-                                <video
-                                    src={selectedMedia.src}
-                                    controls
-                                    autoPlay
-                                    className="max-w-full max-h-[80vh] rounded-lg shadow-lg"
-                                />
-                            )}
+                            <div className="relative">
+                                <button
+                                    className="absolute top-2 right-2 z-10 text-white bg-black/60 p-1 rounded-full hover:text-red-500 transition-colors"
+                                    onClick={closeMedia}
+                                >
+                                    <X size={28} />
+                                </button>
+                                {selectedMedia.type === 'image' ? (
+                                    <img
+                                        src={selectedMedia.src}
+                                        alt="Büyütülmüş"
+                                        className="max-w-full max-h-[80vh] rounded-lg shadow-lg"
+                                    />
+                                ) : (
+                                    <video
+                                        src={selectedMedia.src}
+                                        controls
+                                        autoPlay
+                                        className="max-w-full max-h-[80vh] rounded-lg shadow-lg"
+                                    />
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
