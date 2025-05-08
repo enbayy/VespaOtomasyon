@@ -10,7 +10,7 @@ const NavbarUp = () => {
                         <Phone className="text-white" size={40} />
                         <div>
                             <p className="text-white font-semibold">TELEFON:</p>
-                            <p className="text-white font-normal">0332 333 00 19</p>
+                            <p className="text-white font-normal">0533 317 9669</p>
                         </div>
                     </div>
 

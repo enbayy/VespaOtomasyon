@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slider1 from "../assets/foto1.jpg";
-import slider2 from "../assets/foto2.jpg";
-import slider3 from "../assets/foto3.jpg";
-import slider4 from "../assets/foto3.jpg";
+import slider1 from "../assets/foto3.jpg";
+import slider2 from "../assets/foto4.jpg";
+import slider3 from "../assets/foto7.jpg";
+import slider4 from "../assets/foto9.jpg";
+import slider5 from "../assets/foto10.jpg";
+import slider6 from "../assets/foto11.jpg";
 import { FaCheck } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
@@ -18,6 +20,8 @@ const Hero = () => {
         { src: slider2, label: "Resim 2" },
         { src: slider3, label: "Resim 3" },
         { src: slider4, label: "Resim 4" },
+        { src: slider5, label: "Resim 5" },
+        { src: slider6, label: "Resim 5" },
     ];
 
     const sliderSettings = {
@@ -51,27 +55,27 @@ const Hero = () => {
 
                 <p data-aos="fade-up" data-aos-delay="300" className="text-xl md:text-2xl text-black leading-relaxed">
                     <span className="font-semibold text-[#08467e] dark:text-white">Vespa Otomasyon</span>,
-                    <span className="font-semibold text-black dark:text-white"> kapı, kepenk, bariyer ve endüstriyel otomasyon sistemleri alanlarında uzmanlaşmış,</span>
-                    <span className="font-semibold text-black dark:text-white"> yüksek kaliteli ürünler</span>
-                    <span className="font-semibold text-black dark:text-white"> ve yenilikçi çözümler sunan lider bir markadır.</span>
+                    <span className="font-semibold text-black dark:text-white"> otomatik kapı sistemleri, geçiş kontrol çözümleri ve güvenlik sistemleri alanında</span>
+                    <span className="font-semibold text-black dark:text-white"> profesyonel hizmet sunan</span>
+                    <span className="font-semibold text-black dark:text-white"> öncü bir kuruluştur.</span>
                 </p>
 
                 <ul className="text-lg md:text-xl text-black dark:text-white space-y-2">
                     <li data-aos="fade-up" data-aos-delay="400" className="flex items-start gap-2">
                         <FaCheck className="text-[#08467e] dark:text-white mt-1" />
-                        Endüstriyel Otomasyon Çözümleri
+                        15+ Yıllık Sektör Deneyimi ve Güvenilir Hizmet
                     </li>
                     <li data-aos="fade-up" data-aos-delay="500" className="flex items-start gap-2">
                         <FaCheck className="text-[#08467e] dark:text-white mt-1" />
-                        Akıllı Otopark ve Kapı Sistemleri
+                        Türkiye Genelinde Yüzlerce Başarılı Proje
                     </li>
                     <li data-aos="fade-up" data-aos-delay="600" className="flex items-start gap-2">
                         <FaCheck className="text-[#08467e] dark:text-white mt-1" />
-                        15+ Yıllık Deneyim ve Müşteri Memnuniyeti
+                        7/24 Teknik Destek ve Hızlı Müdahale Garantisi
                     </li>
-                    <li data-aos="fade-up" data-aos-delay="700" className="flex items-start gap-2">
+                    <li data-aos="fade-up" data-aos-delay="800" className="flex items-start gap-2">
                         <FaCheck className="text-[#08467e] dark:text-white mt-1" />
-                        Gelişmiş Uzaktan İzleme ve Kontrol Sistemleri
+                        Uzaktan Erişimli ve Akıllı Otomasyon Teknolojileri
                     </li>
                 </ul>
 
