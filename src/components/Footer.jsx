@@ -6,23 +6,25 @@ import logo from "../assets/vespalogo.png"
 
 const Footer = () => {
     return (
-        <footer className="bg-[#08467e] py-16">
+        <footer className="bg-[#af1816] py-16">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                     <div className="flex flex-col items-center md:items-start text-center md:text-left">
-                        <img src={logo} alt="VESPA" className="w-60 md:w-60" />
+                        <div className="bg-white p-4 rounded-2xl">
+                            <img src={logo} alt="VESPA" className="w-60 md:w-60" />
+                        </div>
                         <div className="flex space-x-10 mt-8">
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                                <SiFacebook size={35} className="text-white text-2xl hover:text-[#FFCC00] transition-colors duration-300" />
+                                <SiFacebook size={35} className="text-white text-2xl hover:text-blue-500 transition-colors duration-300" />
                             </a>
                             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                                <FaYoutube size={35} className="text-white text-2xl hover:text-[#FFCC00] transition-colors duration-300" />
+                                <FaYoutube size={35} className="text-white text-2xl hover:text-blue-500 transition-colors duration-300" />
                             </a>
                             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                <SiInstagram size={35} className="text-white text-2xl hover:text-[#FFCC00] transition-colors duration-300" />
+                                <SiInstagram size={35} className="text-white text-2xl hover:text-blue-500 transition-colors duration-300" />
                             </a>
                             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                                <SiTwitter size={35} className="text-white text-2xl hover:text-[#FFCC00] transition-colors duration-300" />
+                                <SiTwitter size={35} className="text-white text-2xl hover:text-blue-500 transition-colors duration-300" />
                             </a>
                         </div>
                     </div>

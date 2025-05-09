@@ -3,18 +3,18 @@ import logo from "../assets/vespalogo.png"
 
 const AboutHome = () => {
     return (
-        <section className="container bg-[#f3f9ff] dark:bg-black py-16" data-aos="fade-up">
+        <section className="container bg-white dark:bg-black py-16" data-aos="fade-up">
             <div className="w-full mx-auto grid md:grid-cols-2 gap-10 items-center">
                 <div className="md:text-left space-y-6">
                     <h2
                         style={{ fontFamily: "Inter, sans-serif" }}
-                        className="text-4xl md:text-5xl font-bold text-[#08467e] dark:text-white leading-tight relative inline-block"
+                        className="text-4xl md:text-5xl font-bold text-[#af1816] dark:text-white leading-tight relative inline-block"
                         data-aos="fade-up"
                         data-aos-delay="100"
                     >
                         VESPA OTOMASYON
                     </h2>
-                    <span className="block w-16 h-1 bg-[#08467e] dark:bg-white mt-2 rounded"></span>
+                    <span className="block w-16 h-1 bg-[#af1816] dark:bg-white mt-2 rounded"></span>
                     <p
                         style={{ fontFamily: "Poppins, sans-serif" }}
                         className="text-gray-700 dark:text-gray-300 text-lg md:text-xl"

@@ -45,7 +45,7 @@ const CompanyInfo = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className="container bg-[#f3f9ff] dark:bg-black py-12 px-6 md:px-16 lg:px-24">
+        <section ref={sectionRef} className="container bg-white dark:bg-black py-12 px-6 md:px-16 lg:px-24">
             <div className="flex flex-col justify-center items-center max-w-6xl mx-auto text-center">
                 <Link to="/" className="bg-white rounded-full">
                     <img src={logo} alt="Vespa Kapi Logo" className="w-60 h-auto" />
@@ -59,7 +59,7 @@ const CompanyInfo = () => {
 
             <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-10 text-center">
                 {stats.map((stat, index) => (
-                    <div key={index} className="bg-[#f3f9ff] p-8 rounded-2xl transform transition duration-300 hover:scale-105">
+                    <div key={index} className="bg-white p-8 rounded-2xl transform transition duration-300 hover:scale-105">
                         <h3 className="text-3xl font-bold text-[#08467e] font-sans">
                             {counts[index]}{stat.suffix}
                         </h3>

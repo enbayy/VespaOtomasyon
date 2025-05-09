@@ -13,7 +13,7 @@ const CardPage = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="bg-white container mx-auto px-4">
       <div className="flex flex-col items-center space-y-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
           {cardData.slice(0, 3).map((card, index) => (

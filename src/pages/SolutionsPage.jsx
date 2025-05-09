@@ -3,7 +3,7 @@ import CardPage from './CardPage'
 
 const SolutionsPage = () => {
     return (
-        <div className='bg-[#f3f9ff] dark:bg-black'>
+        <div className='bg-white dark:bg-black'>
             <CardPage />
         </div>
     )

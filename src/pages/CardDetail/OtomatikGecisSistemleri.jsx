@@ -2,12 +2,12 @@ import React from 'react';
 
 const OtomatikGecisSistemleri = () => {
     return (
-        <div className="bg-[#f3f9ff] dark:bg-black w-full mx-auto px-6 py-12">
+        <div className="bg-white dark:bg-black w-full mx-auto px-6 py-12">
             <div className='container max-w-6xl'>
-                <h1 className="text-4xl font-bold text-center text-[#08467e] dark:text-white mb-10">
+                <h1 className="text-4xl font-bold text-center text-[#af1816] dark:text-white mb-10">
                     OTOMATİK GEÇİŞ SİSTEMLERİ
                 </h1>
-                <div className="bg-[#f3f9ff] dark:bg-black border-b-2 border-[#08467e] shadow-md overflow-hidden mb-10">
+                <div className="bg-white dark:bg-black border-b-2 border-[#af1816] shadow-md overflow-hidden mb-10">
                     <img
                         src="https://www.vespakapi.com/wp-content/uploads/2015/10/otomatik-gecis-sistemi-konya.jpg"
                         alt="Otomatik Geçiş 1"

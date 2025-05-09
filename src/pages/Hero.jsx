@@ -35,20 +35,20 @@ const Hero = () => {
   const handleSolutions = () => navigate("/cozumler");
 
   return (
-    <section className="bg-[#f3f9ff] dark:bg-black py-20 px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center justify-between gap-10">
-      <div className="w-full md:w-1/2 space-y-7">
+    <section className="container bg-white dark:bg-black py-20  flex flex-col md:flex-row items-center justify-between gap-10">
+      <div className="w-full md:w-1/2 space-y-4">
         <h1 style={{ fontFamily: "Inter, sans-serif" }}
-          className="text-5xl md:text-7xl font-extrabold bg-[#08467e] text-transparent bg-clip-text leading-tight tracking-wider drop-shadow-xl">
+          className="text-[#af1816] text-6xl md:text-6xl font-bold">
           VESPA OTOMASYON
         </h1>
 
         <p style={{ fontFamily: "Poppins, sans-serif" }}
-          className="text-2xl md:text-3xl text-[#08467e] dark:text-white font-semibold leading-relaxed tracking-wide">
+          className="text-xl md:text-xl text-[#af1816] dark:text-white">
           OTOMATİK KAPI SİSTEMLERİNDE GÜVENİLİR ÇÖZÜM ORTAĞINIZ
         </p>
 
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-i">
-          <span className="font-semibold text-[#08467e]">Vespa Otomasyon</span>, geçiş kontrol çözümleri, güvenlik sistemleri ve akıllı otomasyon alanlarında
+          <span className="font-semibold text-[#af1816]">Vespa Otomasyon</span>, geçiş kontrol çözümleri, güvenlik sistemleri ve akıllı otomasyon alanlarında
           yenilikçi hizmet anlayışıyla sektörde fark yaratıyor.
         </p>
 
@@ -57,13 +57,13 @@ const Hero = () => {
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
           {[
-            "15+ Yıllık Sektör Deneyimi ve Güvenilir Hizmet",
+            "10+ Yıllık Sektör Deneyimi ve Güvenilir Hizmet",
             "Türkiye Genelinde Yüzlerce Başarılı Proje",
             "7/24 Teknik Destek ve Hızlı Müdahale Garantisi",
             "Uzaktan Erişimli Akıllı Otomasyon Sistemleri",
           ].map((item, idx) => (
             <li key={idx} className="flex items-center gap-3">
-              <FaCheckCircle className="text-[#0ca5e1] text-xl" />
+              <FaCheckCircle className="text-[#af1816] text-xl" />
               <span>{item}</span>
             </li>
           ))}
@@ -73,14 +73,14 @@ const Hero = () => {
           <button
             onClick={handleSolutions}
             style={{ fontFamily: "Inter, sans-serif" }}
-            className="bg-[#08467e] hover:bg-[#0ca5e1] text-white px-7 py-4 rounded-full font-semibold tracking-wide shadow-lg transition-all"
+            className="bg-[#af1816] hover:bg-[#c94643] text-white px-7 py-4 rounded-full font-semibold tracking-wide shadow-lg transition-all"
           >
             ÇÖZÜMLERİ İNCELE
           </button>
           <button
             onClick={handleContact}
             style={{ fontFamily: "Inter, sans-serif" }}
-            className="border border-[#0ca5e1] hover:bg-[#0ca5e1] hover:text-white text-[#0ca5e1] px-7 py-4 rounded-full font-semibold tracking-wide shadow-md transition-all"
+            className="border border-[#af1816] hover:bg-[#af1816] hover:text-white text-[#af1816] px-7 py-4 rounded-full font-semibold tracking-wide shadow-md transition-all"
           >
             İLETİŞİME GEÇ
           </button>
@@ -88,7 +88,7 @@ const Hero = () => {
       </div>
 
       <div className="w-full md:w-1/2 space-y-5">
-        <div className="aspect-video rounded-xl overflow-hidden shadow-xl border-4 border-[#0ca5e1]">
+        <div className="aspect-video rounded-xl overflow-hidden shadow-xl border-4 border-[#af1816]">
           <img
             src={selectedImage}
             alt="Seçilen Görsel"
@@ -102,7 +102,7 @@ const Hero = () => {
               <div
                 onClick={() => setSelectedImage(img)}
                 className={`overflow-hidden rounded-lg border-2 ${selectedImage === img
-                  ? "border-[#0ca5e1]"
+                  ? "border-[#af1816]"
                   : "border-transparent"} shadow hover:shadow-lg transition-all`}
               >
                 <img
@@ -124,8 +124,8 @@ const Hero = () => {
         }
         .slick-prev:before,
         .slick-next:before {
-          color: #08467e;
-          font-size: 30px;
+          color: #af1816;
+          font-size: 25px;
         }
       `}</style>
     </section>

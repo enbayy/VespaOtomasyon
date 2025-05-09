@@ -3,10 +3,10 @@ import { MapPin, Phone, Globe, Mail } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section className="bg-[#f3f9ff] dark:bg-black">
+    <section className="bg-white dark:bg-black">
       <div className="container mx-auto px-6 md:px-12 lg:px-24 py-0 md:py-8">
         <div className="flex flex-col lg:flex-row gap-12">
-          <div className="w-full lg:w-1/2 bg-[#f3f9ff] dark:bg-black rounded-xl p-10">
+          <div className="w-full lg:w-1/2 bg-white dark:bg-black rounded-xl p-10">
             <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-3xl font-semibold text-gray-800 dark:text-white mb-8 text-start font-sans">İLETİŞİM FORMU</h3>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -16,7 +16,7 @@ const ContactSection = () => {
                     type="text"
                     id="name"
                     placeholder="Adınızı girin"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#08467e] transition duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#af1816] transition duration-300"
                   />
                 </div>
                 <div>
@@ -25,7 +25,7 @@ const ContactSection = () => {
                     type="text"
                     id="surname"
                     placeholder="Soyadınızı girin"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#08467e] transition duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#af1816] transition duration-300"
                   />
                 </div>
               </div>
@@ -36,7 +36,7 @@ const ContactSection = () => {
                   type="email"
                   id="email"
                   placeholder="E-posta adresinizi girin"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#08467e] transition duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#af1816] transition duration-300"
                 />
               </div>
 
@@ -46,14 +46,14 @@ const ContactSection = () => {
                   id="message"
                   placeholder="Mesajınızı buraya yazın"
                   rows="6"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#08467e] transition duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#af1816] transition duration-300"
                 ></textarea>
               </div>
 
               <div className="text-center">
                 <button
                   type="submit"
-                  className="bg-[#08467e] text-white font-medium px-8 py-3 rounded-lg hover:bg-[#1b364e] transition duration-100 shadow-md"
+                  className="bg-[#af1816] text-white font-medium px-8 py-3 rounded-lg hover:bg-[#1b364e] transition duration-100 shadow-md"
                 >
                   Gönder
                 </button>
@@ -62,39 +62,39 @@ const ContactSection = () => {
           </div>
 
           <div className="w-full lg:w-1/2 space-y-2">
-            <div className="bg-[#f3f9ff] dark:bg-black rounded-xl py-10 space-y-6">
+            <div className="bg-white dark:bg-black rounded-xl py-10 space-y-6">
               <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-3xl font-semibold text-gray-800 dark:text-white mb-8 text-start font-sans">İRTİBAT BİLGİLERİ</h3>
               <div className="flex items-start gap-6">
-                <MapPin className="text-[#08467e] dark:text-white" />
+                <MapPin className="text-[#af1816] dark:text-white" />
                 <p style={{ fontFamily: "Inter, sans-serif" }} className="text-gray-700 dark:text-white font-semibold">
                   Fevzi çakmak mahallesi 10655. sokak No: 59 Karatay Konya
                 </p>
               </div>
               <div className="flex items-start gap-6">
-                <Phone className="text-[#08467e] dark:text-white" />
+                <Phone className="text-[#af1816] dark:text-white" />
                 <p style={{ fontFamily: "Inter, sans-serif" }} className="text-gray-700 dark:text-white font-semibold">0332 333 00 19</p>
               </div>
               <div className="flex items-start gap-6">
-                <Phone className="text-[#08467e] dark:text-white" />
+                <Phone className="text-[#af1816] dark:text-white" />
                 <p style={{ fontFamily: "Inter, sans-serif" }} className="text-gray-700 dark:text-white font-semibold">0533 317 96 69</p>
               </div>
               <div className="flex items-start gap-6">
-                <Globe className="text-[#08467e] dark:text-white" />
+                <Globe className="text-[#af1816] dark:text-white" />
                 <a
                   href="https://www.vespaotomasyon.com.tr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#08467e] dark:text-white hover:underline font-semibold"
+                  className="text-blue-500 dark:text-white hover:underline font-semibold"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   www.vespaotomasyon.com.tr
                 </a>
               </div>
               <div className="flex items-start gap-6">
-                <Mail className="text-[#08467e] dark:text-white" />
+                <Mail className="text-[#af1816] dark:text-white" />
                 <a
                   href="mailto:info@vespakapi.com"
-                  className="text-[#08467e] dark:text-white hover:underline font-semibold"
+                  className="text-blue-500 dark:text-white hover:underline font-semibold"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   info@vespakapi.com

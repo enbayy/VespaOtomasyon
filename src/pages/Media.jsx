@@ -46,7 +46,7 @@ const Media = () => {
     };
 
     return (
-        <div className="bg-[#f3f9ff] dark:bg-black w-full p-4 space-y-6">
+        <div className="bg-white dark:bg-black w-full p-4 space-y-6">
             <h2 style={{ fontFamily: "Inter, sans-serif" }} className="text-2xl font-bold text-center text-black dark:text-white">MEDYA GALERİSİ</h2>
 
             <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">

@@ -5,11 +5,11 @@ import feature2 from '../assets/foto3.jpg';
 
 const About = () => {
   return (
-    <section className="bg-[#f3f9ff] text-gray-800">
-      <div className="relative bg-[#f3f9ff] dark:bg-black py-8 md:py-20 px-6 md:px-20">
+    <section className="bg-white text-gray-800">
+      <div className="relative bg-white dark:bg-black py-8 md:py-20 px-6 md:px-20">
         <div className="grid md:grid-cols-2 items-center gap-10">
           <div>
-            <h1 style={{ fontFamily: "Inter, sans-serif" }} className="text-4xl md:text-5xl font-bold text-[#08467e] dark:text-white mb-6" data-aos="fade-up">
+            <h1 style={{ fontFamily: "Inter, sans-serif" }} className="text-4xl md:text-5xl font-bold text-[#af1816] dark:text-white mb-6" data-aos="fade-up">
               GÜVENLİ GELECEĞİN KAPILARINI AÇIYORUZ
             </h1>
             <p style={{ fontFamily: "Poppins, sans-serif" }} className="text-xl text-gray-700 dark:text-white mb-6 max-w-xl" data-aos="fade-up">
@@ -17,7 +17,7 @@ const About = () => {
               fark yaratan çözümler sunar. Konutlardan iş yerlerine, endüstriyel tesislerden kamu binalarına kadar
               farklı alanlarda yüksek teknoloji ve kaliteyle hizmet veririz.
             </p>
-            <p style={{ fontFamily: "Poppins, sans-serif" }} className="text-[#08467e] dark:text-white font-semibold text-xl" data-aos="fade-up">
+            <p style={{ fontFamily: "Poppins, sans-serif" }} className="text-[#af1816] dark:text-white font-semibold text-xl" data-aos="fade-up">
               Güvenliğinizi uzman ellere bırakın, biz her adımda yanınızdayız.
             </p>
           </div>
@@ -31,9 +31,9 @@ const About = () => {
         </div>
       </div>
 
-      <div className="py-20 px-6 md:px-20 bg-[#f3f9ff] dark:bg-black">
+      <div className="py-20 px-6 md:px-20 bg-white dark:bg-black">
         <div className="text-center mb-16">
-          <h2 style={{ fontFamily: "Inter, sans-serif" }} className="text-3xl md:text-4xl font-semibold text-[#08467e] dark:text-white mb-4" data-aos="fade-up">
+          <h2 style={{ fontFamily: "Inter, sans-serif" }} className="text-3xl md:text-4xl font-semibold text-[#af1816] dark:text-white mb-4" data-aos="fade-up">
             Neden VESPA?
           </h2>
           <p style={{ fontFamily: "Inter, sans-serif" }} className="text-gray-700 dark:text-white max-w-2xl mx-auto text-lg" data-aos="fade-up">
@@ -43,21 +43,21 @@ const About = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-10 text-center">
-          <div data-aos="fade-up" className="bg-[#f3f9ff] dark:bg-black p-6 rounded-lg">
-            <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-xl font-semibold text-[#08467e] dark:text-white mb-3">10+ Yıl Tecrübe</h3>
+          <div data-aos="fade-up" className="bg-white dark:bg-black p-6 rounded-lg">
+            <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-xl font-semibold text-[#af1816] dark:text-white mb-3">10+ Yıl Tecrübe</h3>
             <p style={{ fontFamily: "Inter, sans-serif" }} className="text-gray-700 dark:text-white text-lg">
               Kurumsal ve bireysel projelerde edindiğimiz tecrübeyle, giriş güvenliği konusunda uzman bir çözüm ortağıyız.
               Sahada deneyimli ekiplerimizle projeleri zamanında ve kaliteli şekilde tamamlıyoruz.
             </p>
           </div>
-          <div data-aos="fade-up" className="bg-[#f3f9ff] dark:bg-black p-6 rounded-lg">
-            <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-xl font-semibold text-[#08467e] dark:text-white mb-3">Yüksek Teknoloji</h3>
+          <div data-aos="fade-up" className="bg-white dark:bg-black p-6 rounded-lg">
+            <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-xl font-semibold text-[#af1816] dark:text-white mb-3">Yüksek Teknoloji</h3>
             <p style={{ fontFamily: "Inter, sans-serif" }} className="text-gray-700 dark:text-white text-lg">
               Sistemlerimizde dünya standartlarına uygun yazılım ve donanımlar kullanıyoruz. Plaka tanıma, kartlı geçiş, turnike sistemleri gibi çözümlerimizde son teknolojiyi yakından takip ediyoruz.
             </p>
           </div>
-          <div data-aos="fade-up" className="bg-[#f3f9ff] dark:bg-black p-6 rounded-lg">
-            <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-xl font-semibold text-[#08467e] dark:text-white mb-3">Anahtar Teslim Çözümler</h3>
+          <div data-aos="fade-up" className="bg-white dark:bg-black p-6 rounded-lg">
+            <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-xl font-semibold text-[#af1816] dark:text-white mb-3">Anahtar Teslim Çözümler</h3>
             <p style={{ fontFamily: "Inter, sans-serif" }} className="text-gray-700 dark:text-white text-lg">
               Kurulum öncesi keşiften, sistemin devreye alınmasına kadar her aşamada sizin için buradayız. Planlama, uygulama ve teslim süreçlerini entegre şekilde yürütüyor, size sadece güvenliğin keyfini yaşamak kalıyor.
             </p>
@@ -65,7 +65,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-10 items-center py-20 px-6 md:px-20 bg-[#f3f9ff] dark:bg-black">
+      <div className="grid md:grid-cols-2 gap-10 items-center py-20 px-6 md:px-20 bg-white dark:bg-black">
         <div data-aos="fade-right">
           <img
             src={feature1}
@@ -74,7 +74,7 @@ const About = () => {
           />
         </div>
         <div data-aos="fade-left">
-          <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-2xl font-semibold text-[#08467e] dark:text-white mb-4">Giriş Sistemlerinde Uzmanlık</h3>
+          <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-2xl font-semibold text-[#af1816] dark:text-white mb-4">Giriş Sistemlerinde Uzmanlık</h3>
           <p style={{ fontFamily: "Inter, sans-serif" }} className="text-lg text-gray-700 dark:text-white mb-4">
             VESPA olarak, projelerinize özel analiz yaparak ihtiyaçlarınıza en uygun giriş sistemlerini belirliyoruz.
             Yüksek güvenlikli otomatik kapılar, bariyer sistemleri, plaka ve kart okuyucu çözümler ile kapsamlı ve entegre sistemler sunuyoruz.
@@ -85,9 +85,9 @@ const About = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-10 items-center py-20 px-6 md:px-20 bg-[#f3f9ff] dark:bg-black">
+      <div className="grid md:grid-cols-2 gap-10 items-center py-20 px-6 md:px-20 bg-white dark:bg-black">
         <div className="order-2 md:order-1" data-aos="fade-right">
-          <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-2xl font-semibold text-[#08467e] dark:text-white mb-4">Vizyonumuz & Misyonumuz</h3>
+          <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-2xl font-semibold text-[#af1816] dark:text-white mb-4">Vizyonumuz & Misyonumuz</h3>
           <p style={{ fontFamily: "Inter, sans-serif" }} className="text-lg text-gray-700 dark:text-white mb-4">
             <strong >Vizyonumuz:</strong> Türkiye genelinde ve uluslararası alanda, güvenlik teknolojileri denildiğinde ilk akla gelen, inovatif çözümleriyle sektöre yön veren bir marka olmaktır.
           </p>
