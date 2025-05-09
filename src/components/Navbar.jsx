@@ -80,7 +80,7 @@ export const Navbar = () => {
                     </button>
                 </div>
 
-                <ul className={`lg:flex items-center gap-8 text-base font-medium absolute lg:static top-20 left-0 w-full lg:w-auto px-6 lg:px-0 transition-all duration-300 ease-in-out z-40 ${menuOpen ? 'block' : 'hidden'} lg:block`}>
+                <ul className={`bg-white lg:flex items-center gap-8 text-base font-medium absolute lg:static top-20 left-0 w-full lg:w-auto px-6 lg:px-0 transition-all duration-300 ease-in-out z-40 ${menuOpen ? 'block' : 'hidden'} lg:block`}>
                     <li className="py-2 lg:py-0">
                         <Link to="/" className={linkClass("/")} onClick={() => setMenuOpen(false)}>
                             ANASAYFA
