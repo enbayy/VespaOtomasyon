@@ -8,130 +8,123 @@ import slider3 from "../assets/foto7.jpg";
 import slider4 from "../assets/foto9.jpg";
 import slider5 from "../assets/foto10.jpg";
 import slider6 from "../assets/foto11.jpg";
-import { FaCheck } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
-    const [selectedImage, setSelectedImage] = useState(slider1);
-    const navigate = useNavigate();
+  const [selectedImage, setSelectedImage] = useState(slider1);
+  const navigate = useNavigate();
 
-    const images = [
-        { src: slider1, label: "Resim 1" },
-        { src: slider2, label: "Resim 2" },
-        { src: slider3, label: "Resim 3" },
-        { src: slider4, label: "Resim 4" },
-        { src: slider5, label: "Resim 5" },
-        { src: slider6, label: "Resim 5" },
-    ];
+  const images = [slider1, slider2, slider3, slider4, slider5, slider6];
 
-    const sliderSettings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        arrows: true,
-    };
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: true,
+    responsive: [
+      { breakpoint: 768, settings: { slidesToShow: 2 } },
+      { breakpoint: 480, settings: { slidesToShow: 1 } },
+    ],
+  };
 
-    const handleClick = () => {
-        navigate("/iletisim")
-    }
+  const handleContact = () => navigate("/iletisim");
+  const handleSolutions = () => navigate("/cozumler");
 
-    const handleClick1 = () => {
-        navigate("/cozumler")
-    }
+  return (
+    <section className="bg-[#f3f9ff] dark:bg-black py-20 px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center justify-between gap-10">
+      <div className="w-full md:w-1/2 space-y-7">
+        <h1 style={{ fontFamily: "Inter, sans-serif" }}
+          className="text-5xl md:text-7xl font-extrabold bg-[#08467e] text-transparent bg-clip-text leading-tight tracking-wider drop-shadow-xl">
+          VESPA OTOMASYON
+        </h1>
 
-    return (
-        <section className="bg-[#f3f9ff] dark:bg-black w-full flex flex-col md:flex-row items-center justify-center px-6 sm:px-8 md:px-12 py-0 sm:py-8 md:py-10 space-y-12 md:space-y-0 container relative overflow-hidden">
-            <div className="w-full md:w-1/2 flex flex-col justify-center space-y-8 p-8 bg-opacity-90 bg-[#f3f9ff] dark:bg-black rounded-lg lg:mb-16 relative z-10">
-                <h1 data-aos="fade-up" data-aos-delay="100" className="text-4xl md:text-6xl -mb-6 font-bold tracking-wide text-[#08467e] dark:text-white leading-tight drop-shadow-lg">
-                    VESPA OTOMASYON
-                </h1>
+        <p style={{ fontFamily: "Poppins, sans-serif" }}
+          className="text-2xl md:text-3xl text-[#08467e] dark:text-white font-semibold leading-relaxed tracking-wide">
+          OTOMATİK KAPI SİSTEMLERİNDE GÜVENİLİR ÇÖZÜM ORTAĞINIZ
+        </p>
 
-                <p data-aos="fade-up" data-aos-delay="200" className="text-xl md:text-2xl font-bold tracking-[0.3em] text-[#08467e] dark:text-white leading-tight drop-shadow-lg">
-                    OTOMATİK KAPI SİSTEMLERİ
-                </p>
+        <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-i">
+          <span className="font-semibold text-[#08467e]">Vespa Otomasyon</span>, geçiş kontrol çözümleri, güvenlik sistemleri ve akıllı otomasyon alanlarında
+          yenilikçi hizmet anlayışıyla sektörde fark yaratıyor.
+        </p>
 
-                <p data-aos="fade-up" data-aos-delay="300" className="text-xl md:text-2xl text-black leading-relaxed">
-                    <span className="font-semibold text-[#08467e] dark:text-white">Vespa Otomasyon</span>,
-                    <span className="font-semibold text-black dark:text-white"> otomatik kapı sistemleri, geçiş kontrol çözümleri ve güvenlik sistemleri alanında</span>
-                    <span className="font-semibold text-black dark:text-white"> profesyonel hizmet sunan</span>
-                    <span className="font-semibold text-black dark:text-white"> öncü bir kuruluştur.</span>
-                </p>
+        <ul className="space-y-3 text-gray-800 dark:text-white text-base md:text-lg">
+          {[
+            "15+ Yıllık Sektör Deneyimi ve Güvenilir Hizmet",
+            "Türkiye Genelinde Yüzlerce Başarılı Proje",
+            "7/24 Teknik Destek ve Hızlı Müdahale Garantisi",
+            "Uzaktan Erişimli Akıllı Otomasyon Sistemleri",
+          ].map((item, idx) => (
+            <li key={idx} className="flex items-center gap-3">
+              <FaCheckCircle className="text-[#0ca5e1] text-xl" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
 
-                <ul className="text-lg md:text-xl text-black dark:text-white space-y-2">
-                    <li data-aos="fade-up" data-aos-delay="400" className="flex items-start gap-2">
-                        <FaCheck className="text-[#08467e] dark:text-white mt-1" />
-                        15+ Yıllık Sektör Deneyimi ve Güvenilir Hizmet
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="500" className="flex items-start gap-2">
-                        <FaCheck className="text-[#08467e] dark:text-white mt-1" />
-                        Türkiye Genelinde Yüzlerce Başarılı Proje
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="600" className="flex items-start gap-2">
-                        <FaCheck className="text-[#08467e] dark:text-white mt-1" />
-                        7/24 Teknik Destek ve Hızlı Müdahale Garantisi
-                    </li>
-                    <li data-aos="fade-up" data-aos-delay="800" className="flex items-start gap-2">
-                        <FaCheck className="text-[#08467e] dark:text-white mt-1" />
-                        Uzaktan Erişimli ve Akıllı Otomasyon Teknolojileri
-                    </li>
-                </ul>
+        <div className="flex flex-wrap gap-5 pt-5">
+          <button
+            onClick={handleSolutions}
+            className="bg-[#08467e] hover:bg-[#0ca5e1] text-white px-7 py-4 rounded-full font-semibold uppercase tracking-wide shadow-lg transition-all"
+          >
+            Çözümleri İncele
+          </button>
+          <button
+            onClick={handleContact}
+            className="border border-[#0ca5e1] hover:bg-[#0ca5e1] hover:text-white text-[#0ca5e1] px-7 py-4 rounded-full font-semibold uppercase tracking-wide shadow-md transition-all"
+          >
+            Bizimle İletişime Geç
+          </button>
+        </div>
+      </div>
 
-                <div className="flex space-x-4 mt-6">
-                    <button onClick={handleClick1} className="bg-[#08467e] text-white px-6 py-3 rounded-lg shadow-lg transition-all transform hover:scale-110">
-                        Çözümleri İncele
-                    </button>
-                    <button onClick={handleClick} className="bg-[#08467e] text-white px-6 py-3 rounded-lg shadow-lg transition-all transform hover:scale-110">
-                        Bizimle İletişime Geç
-                    </button>
-                </div>
+      <div className="w-full md:w-1/2 space-y-5">
+        <div className="aspect-video rounded-xl overflow-hidden shadow-xl border-4 border-[#0ca5e1]">
+          <img
+            src={selectedImage}
+            alt="Seçilen Görsel"
+            className="w-full h-full object-cover transition-all duration-500"
+          />
+        </div>
+
+        <Slider {...sliderSettings} className="mt-2">
+          {images.map((img, i) => (
+            <div key={i} className="px-2 cursor-pointer">
+              <div
+                onClick={() => setSelectedImage(img)}
+                className={`overflow-hidden rounded-lg border-2 ${selectedImage === img
+                  ? "border-[#0ca5e1]"
+                  : "border-transparent"} shadow hover:shadow-lg transition-all`}
+              >
+                <img
+                  src={img}
+                  alt={`Slider ${i + 1}`}
+                  className="w-full h-32 object-cover rounded-lg"
+                  loading="lazy"
+                />
+              </div>
             </div>
+          ))}
+        </Slider>
+      </div>
 
-            <div data-aos="fade-up" data-aos-delay="400" className="w-full md:w-1/2 flex flex-col items-center space-y-6 relative z-10">
-                <div className="w-full max-w-2xl aspect-video border-4 border-[#08467e] rounded-xl shadow-lg overflow-hidden">
-                    <img
-                        src={selectedImage}
-                        alt="Selected"
-                        className="w-full h-full object-cover"
-                    />
-                </div>
-
-                <Slider {...sliderSettings} className="w-full max-w-2xl relative z-10">
-                    {images.map((item, index) => (
-                        <div key={index} className="p-2 cursor-pointer" onClick={() => setSelectedImage(item.src)}>
-                            <div className="w-full aspect-video bg-[#08467e] hover:bg-[#08467e] rounded-md shadow-md overflow-hidden">
-                                <img
-                                    src={item.src}
-                                    alt={item.label}
-                                    className="w-full h-full object-cover rounded-md"
-                                />
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
-
-            <style jsx>{`
-                .slick-prev, .slick-next {
-                    color: white !important; 
-                    top: 50% !important; 
-                    transform: translateY(-50%) !important; 
-                    z-index: 20 !important;
-                }
-                .slick-prev {
-                    left: 10px !important; 
-                }
-                .slick-next {
-                    right: 10px !important; 
-                }
-                .slick-prev:before, .slick-next:before {
-                    color: white !important;
-                }
-            `}</style>
-        </section>
-    );
+      <style jsx>{`
+        .slick-prev,
+        .slick-next {
+          z-index: 10;
+        }
+        .slick-prev:before,
+        .slick-next:before {
+          color: #08467e;
+          font-size: 30px;
+        }
+      `}</style>
+    </section>
+  );
 };
 
 export default Hero;

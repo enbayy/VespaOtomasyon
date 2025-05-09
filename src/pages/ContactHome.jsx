@@ -1,5 +1,4 @@
 import { Globe, Mail, MapPin, Phone } from 'lucide-react';
-import React from 'react';
 
 const ContactSection = () => {
     return (
@@ -27,12 +26,12 @@ const ContactSection = () => {
                         <div data-aos="fade-up" data-aos-delay="900" className="flex items-start gap-6">
                             <Globe className="text-blue-600" />
                             <a
-                                href="https://www.vespakapi.com"
+                                href="https://www.vespaotomasyon.com.tr"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-blue-500 hover:underline font-medium text-lg"
                             >
-                                www.vespakapi.com
+                                www.vespaotomasyon.com.tr
                             </a>
                         </div>
                         <div data-aos="fade-up" data-aos-delay="1100" className="flex items-start gap-6">
