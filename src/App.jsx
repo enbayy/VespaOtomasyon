@@ -42,7 +42,6 @@ const App = () => {
         <Route path="/iletisim" element={<Contact />} />
         <Route path="/medya" element={<Media />} />
         <Route path="/cozumler" element={<SolutionsPage />} />
-        <Route path="/" element={<CardPage />} />
         <Route path="/card/otomatikkapisistemleri" element={<OtomatikKapiSistemleri />} />
         <Route path="/card/otomatikgecissistemleri" element={<OtomatikGecisSistemleri />} />
         <Route path="/card/plakatanimasistemleri" element={<PlakaTanimaSistemleri />} />
