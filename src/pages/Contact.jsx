@@ -7,7 +7,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-24 py-0 md:py-8">
         <div className="flex flex-col lg:flex-row gap-12">
           <div className="w-full lg:w-1/2 bg-[#f3f9ff] dark:bg-black rounded-xl p-10">
-            <h3 className="text-3xl font-semibold text-gray-800 dark:text-white mb-8 text-start font-sans">İLETİŞİM FORMU</h3>
+            <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-3xl font-semibold text-gray-800 dark:text-white mb-8 text-start font-sans">İLETİŞİM FORMU</h3>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -63,37 +63,39 @@ const ContactSection = () => {
 
           <div className="w-full lg:w-1/2 space-y-2">
             <div className="bg-[#f3f9ff] dark:bg-black rounded-xl py-10 space-y-6">
-              <h3 className="text-3xl font-semibold text-gray-800 dark:text-white mb-8 text-start font-sans">İRTİBAT BİLGİLERİ</h3>
+              <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-3xl font-semibold text-gray-800 dark:text-white mb-8 text-start font-sans">İRTİBAT BİLGİLERİ</h3>
               <div className="flex items-start gap-6">
                 <MapPin className="text-[#08467e] dark:text-white" />
-                <p className="text-gray-700 dark:text-white font-medium">
+                <p style={{ fontFamily: "Inter, sans-serif" }} className="text-gray-700 dark:text-white font-semibold">
                   Fevzi çakmak mahallesi 10655. sokak No: 59 Karatay Konya
                 </p>
               </div>
               <div className="flex items-start gap-6">
                 <Phone className="text-[#08467e] dark:text-white" />
-                <p className="text-gray-700 dark:text-white font-medium">0332 333 00 19</p>
+                <p style={{ fontFamily: "Inter, sans-serif" }} className="text-gray-700 dark:text-white font-semibold">0332 333 00 19</p>
               </div>
               <div className="flex items-start gap-6">
                 <Phone className="text-[#08467e] dark:text-white" />
-                <p className="text-gray-700 dark:text-white font-medium">0533 317 96 69</p>
+                <p style={{ fontFamily: "Inter, sans-serif" }} className="text-gray-700 dark:text-white font-semibold">0533 317 96 69</p>
               </div>
               <div className="flex items-start gap-6">
                 <Globe className="text-[#08467e] dark:text-white" />
                 <a
-                  href="https://www.vespakapi.com"
+                  href="https://www.vespaotomasyon.com.tr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#08467e] dark:text-white hover:underline font-medium"
+                  className="text-[#08467e] dark:text-white hover:underline font-semibold"
+                  style={{ fontFamily: "Inter, sans-serif" }}
                 >
-                  www.vespakapi.com
+                  www.vespaotomasyon.com.tr
                 </a>
               </div>
               <div className="flex items-start gap-6">
                 <Mail className="text-[#08467e] dark:text-white" />
                 <a
                   href="mailto:info@vespakapi.com"
-                  className="text-[#08467e] dark:text-white hover:underline font-medium"
+                  className="text-[#08467e] dark:text-white hover:underline font-semibold"
+                  style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   info@vespakapi.com
                 </a>

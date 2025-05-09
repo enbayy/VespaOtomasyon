@@ -4,24 +4,24 @@ const ContactSection = () => {
     return (
         <section>
             <div className="container p-8 rounded-xl">
-                <h2 data-aos="fade-up" data-aos-delay="100" className="text-3xl font-bold text-[#08467e] dark:text-white mb-6 font-sans">
+                <h2 style={{ fontFamily: "Inter, sans-serif" }} data-aos="fade-up" data-aos-delay="100" className="text-3xl font-bold text-[#08467e] dark:text-white mb-6 font-sans">
                     İLETİŞİM BİLGİLERİ
                 </h2>
                 <div className="flex flex-col md:flex-col lg:flex-row items-start gap-8">
                     <div className="space-y-6 w-full lg:w-1/2">
                         <div data-aos="fade-up" data-aos-delay="300" className="flex items-start gap-6">
                             <MapPin className="text-blue-600" />
-                            <p className="text-gray-700 dark:text-white font-medium text-lg">
+                            <p style={{ fontFamily: "Poppins, sans-serif" }} className="text-gray-700 dark:text-white font-semibold text-lg">
                                 Fevzi çakmak mahallesi 10655. sokak No: 59 Karatay Konya
                             </p>
                         </div>
                         <div data-aos="fade-up" data-aos-delay="500" className="flex items-start gap-6">
                             <Phone className="text-blue-600" />
-                            <p className="text-gray-700 dark:text-white font-medium text-lg">0332 333 00 19</p>
+                            <p style={{ fontFamily: "Poppins, sans-serif" }} className="text-gray-700 dark:text-white font-semibold text-lg">0332 333 00 19</p>
                         </div>
                         <div data-aos="fade-up" data-aos-delay="700" className="flex items-start gap-6">
                             <Phone className="text-blue-600" />
-                            <p className="text-gray-700 dark:text-white font-medium text-lg">0533 317 96 69</p>
+                            <p style={{ fontFamily: "Poppins, sans-serif" }} className="text-gray-700 dark:text-white font-semibold text-lg">0533 317 96 69</p>
                         </div>
                         <div data-aos="fade-up" data-aos-delay="900" className="flex items-start gap-6">
                             <Globe className="text-blue-600" />
@@ -29,7 +29,8 @@ const ContactSection = () => {
                                 href="https://www.vespaotomasyon.com.tr"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-blue-500 hover:underline font-medium text-lg"
+                                className="text-blue-500 hover:underline text-lg font-semibold"
+                                style={{ fontFamily: "Poppins, sans-serif" }}
                             >
                                 www.vespaotomasyon.com.tr
                             </a>
@@ -38,7 +39,8 @@ const ContactSection = () => {
                             <Mail className="text-blue-600" />
                             <a
                                 href="mailto:info@vespakapi.com"
-                                className="text-blue-500 hover:underline font-medium text-lg"
+                                className="text-blue-500 hover:underline text-lg font-semibold"
+                                style={{ fontFamily: "Poppins, sans-serif" }}
                             >
                                 info@vespakapi.com
                             </a>

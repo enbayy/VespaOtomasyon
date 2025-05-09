@@ -52,7 +52,10 @@ const Hero = () => {
           yenilikçi hizmet anlayışıyla sektörde fark yaratıyor.
         </p>
 
-        <ul className="space-y-3 text-gray-800 dark:text-white text-base md:text-lg">
+        <ul
+          className="space-y-3 text-gray-800 dark:text-white text-base md:text-lg"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
           {[
             "15+ Yıllık Sektör Deneyimi ve Güvenilir Hizmet",
             "Türkiye Genelinde Yüzlerce Başarılı Proje",
@@ -69,15 +72,17 @@ const Hero = () => {
         <div className="flex flex-wrap gap-5 pt-5">
           <button
             onClick={handleSolutions}
-            className="bg-[#08467e] hover:bg-[#0ca5e1] text-white px-7 py-4 rounded-full font-semibold uppercase tracking-wide shadow-lg transition-all"
+            style={{ fontFamily: "Inter, sans-serif" }}
+            className="bg-[#08467e] hover:bg-[#0ca5e1] text-white px-7 py-4 rounded-full font-semibold tracking-wide shadow-lg transition-all"
           >
-            Çözümleri İncele
+            ÇÖZÜMLERİ İNCELE
           </button>
           <button
             onClick={handleContact}
-            className="border border-[#0ca5e1] hover:bg-[#0ca5e1] hover:text-white text-[#0ca5e1] px-7 py-4 rounded-full font-semibold uppercase tracking-wide shadow-md transition-all"
+            style={{ fontFamily: "Inter, sans-serif" }}
+            className="border border-[#0ca5e1] hover:bg-[#0ca5e1] hover:text-white text-[#0ca5e1] px-7 py-4 rounded-full font-semibold tracking-wide shadow-md transition-all"
           >
-            Bizimle İletişime Geç
+            İLETİŞİME GEÇ
           </button>
         </div>
       </div>

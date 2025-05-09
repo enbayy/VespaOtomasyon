@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BiSolidSun, BiSolidMoon } from 'react-icons/bi';
 import { HiOutlineMenuAlt3, HiOutlineX } from 'react-icons/hi';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import logo from "../assets/vespalogo.png"
 
 export const Navbar = () => {
     const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -59,8 +60,14 @@ export const Navbar = () => {
     return (
         <header className="w-full h-20 flex items-center bg-[#f3f9ff] text-white dark:bg-black dark:text-white z-50 relative">
             <nav className="container mx-auto px-4 py-3 flex items-center justify-between">
-                <div className="text-2xl font-semibold tracking-wide">
-                    <Link className='text-[#08467e] dark:text-white' to="/">VESPA</Link>
+                <div className="flex items-center">
+                    <Link to="/">
+                        <img
+                            src={logo}
+                            alt="VESPA"
+                            className="h-10 w-auto lg:h-12 transition-all duration-300"
+                        />
+                    </Link>
                 </div>
 
                 <div className="lg:hidden flex items-center gap-4 ">

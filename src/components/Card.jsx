@@ -7,11 +7,11 @@ const Card = ({ icon, title, description }) => (
         {icon}
       </div>
     </div>
-    <h2 className="text-xl md:text-2xl font-semibold text-gray-800 dark:text-white text-center mb-4">
+    <h2 style={{ fontFamily: "Inter, sans-serif" }} className="text-xl md:text-2xl font-semibold text-gray-800 dark:text-white text-center mb-4">
       {title.split(' Sistemleri')[0]} <br />
       {title.includes('Sistemleri') && "Sistemleri"}
     </h2>
-    <p className="text-gray-700 dark:text-white text-center leading-relaxed text-base md:text-lg font-light mt-2 mb-2">
+    <p style={{ fontFamily: "Poppins, sans-serif" }} className="text-gray-700 dark:text-white text-center leading-relaxed text-base md:text-lg font-light mt-2 mb-2">
       {description}
     </p>
   </div>
