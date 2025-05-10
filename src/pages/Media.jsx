@@ -60,8 +60,7 @@ const Media = () => {
                                 src={media.src}
                                 className="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105"
                                 muted
-                                preload="metadata"
-                                controls
+                                loop
                                 playsInline
                             />
                         )}
