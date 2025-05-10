@@ -59,11 +59,10 @@ const Media = () => {
                             <video
                                 src={media.src}
                                 className="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105"
-                                playsInline
                                 muted
                                 preload="metadata"
                                 controls
-                                poster={media.src}
+                                playsInline
                             />
                         )}
                         <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center space-y-2 text-white">
