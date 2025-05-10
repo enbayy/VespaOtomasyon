@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,7 +13,6 @@ import NavbarUp from "./components/NavbarUp";
 import { FaWhatsapp } from 'react-icons/fa';
 import CookieBanner from "./pages/CookieBanner";
 import SolutionsPage from "./pages/SolutionsPage";
-import CardPage from "./pages/CardPage";
 import OtomatikKapiSistemleri from "./pages/CardDetail/OtomatikKapiSistemleri";
 import OtomatikGecisSistemleri from "./pages/CardDetail/OtomatikGecisSistemleri";
 import PlakaTanimaSistemleri from "./pages/CardDetail/PlakaTanimaSistemleri";
@@ -31,7 +30,7 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <NavbarUp />
       <Navbar />
@@ -57,7 +56,7 @@ const App = () => {
       </div>
 
       <CookieBanner />
-    </Router>
+    </>
   );
 };
 

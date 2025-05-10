@@ -8,18 +8,25 @@ import foto5 from '../assets/foto5.jpg';
 import foto6 from '../assets/foto6.jpg';
 import foto7 from '../assets/foto7.jpg';
 import foto8 from '../assets/foto8.jpg';
+import video1 from '../assets/video1.mp4';
+import video2 from '../assets/video2.mp4';
+import video4 from '../assets/video4.mp4';
+import video6 from '../assets/video6.mp4';
+import video7 from '../assets/video7.mp4';
+import video8 from '../assets/video8.mp4';
+import video10 from '../assets/video10.mp4';
 
 const Media = () => {
     const [selectedMedia, setSelectedMedia] = useState(null);
 
     const mediaList = [
-        { type: 'video', src: '/video8.mp4' },
-        { type: 'video', src: '/video1.mp4' },
-        { type: 'video', src: '/video4.mp4' },
-        { type: 'video', src: '/video6.mp4' },
-        { type: 'video', src: '/video7.mp4' },
-        { type: 'video', src: '/video2.mp4' },
-        { type: 'video', src: '/video10.mp4' },
+        { type: 'video', src: video8 },
+        { type: 'video', src: video1 },
+        { type: 'video', src: video4 },
+        { type: 'video', src: video6 },
+        { type: 'video', src: video7 },
+        { type: 'video', src: video2 },
+        { type: 'video', src: video10 },
         { type: 'image', src: foto1 },
         { type: 'image', src: foto2 },
         { type: 'image', src: foto3 },
@@ -40,7 +47,7 @@ const Media = () => {
 
     return (
         <div className="bg-white dark:bg-black w-full p-4 space-y-6">
-            <h2 style={{ fontFamily: "Inter, sans-serif" }} className="text-2xl font-bold text-center text-black dark:text-white">MEDYA GALERİSİ</h2>
+            <h2 className="text-2xl font-bold text-center text-black dark:text-white">MEDYA GALERİSİ</h2>
 
             <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {mediaList.map((media, index) => (
