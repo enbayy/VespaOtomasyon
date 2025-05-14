@@ -1,8 +1,9 @@
 import React from 'react'
+import ComingSoon from './ComingSoon'
 
 const ProductPage = () => {
   return (
-    <div>Ürünler</div>
+    <div className='h-screen flex items-center justify-center'><ComingSoon /></div>
   )
 }
 
