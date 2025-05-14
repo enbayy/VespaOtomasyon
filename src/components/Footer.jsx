@@ -2,7 +2,7 @@ import React from "react";
 import { SiFacebook, SiInstagram, SiTwitter } from "react-icons/si";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { FaYoutube } from "react-icons/fa";
-import logo from "../assets/vespalogo.png"
+import logo from "/vespalogo.png"
 
 const Footer = () => {
     return (

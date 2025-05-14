@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/vespalogo.png"
+import logo from "/vespalogo.png"
 
 const AboutHome = () => {
     return (

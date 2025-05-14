@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BiSolidSun, BiSolidMoon } from 'react-icons/bi';
 import { HiOutlineMenuAlt3, HiOutlineX } from 'react-icons/hi';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import logo from "../assets/vespalogo.png";
+import logo from "/vespalogo.png";
 
 export const Navbar = () => {
     const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
