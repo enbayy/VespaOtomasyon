@@ -122,8 +122,6 @@ const Hero = () => {
         .slick-next:before {
           color: #af1816;
         }
-
-        /* Mobilde okları küçült */
         @media (max-width: 768px) {
           .slick-prev,
           .slick-next {
