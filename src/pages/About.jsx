@@ -15,7 +15,7 @@ const About = () => {
             <p style={{ fontFamily: "Poppins, sans-serif" }} className="text-xl text-gray-700 dark:text-white mb-6 max-w-xl" data-aos="fade-up">
               VESPA Otomatik Kapı Sistemleri, 10 yılı aşkın sektör tecrübesiyle giriş güvenliği alanında
               fark yaratan çözümler sunar. Konutlardan iş yerlerine, endüstriyel tesislerden kamu binalarına kadar
-              farklı alanlarda yüksek teknoloji ve kaliteyle hizmet veririz.
+              farklı alanlarda yüksek teknoloji ve kaliteyle hizmet veriyoruz.
             </p>
             <p style={{ fontFamily: "Poppins, sans-serif" }} className="text-[#af1816] dark:text-white font-semibold text-xl" data-aos="fade-up">
               Güvenliğinizi uzman ellere bırakın, biz her adımda yanınızdayız.
