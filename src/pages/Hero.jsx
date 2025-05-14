@@ -37,20 +37,20 @@ const Hero = () => {
   return (
     <section className="container bg-white dark:bg-black py-10 md:py-20 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-10">
       <div className="w-full md:w-1/2 space-y-2 md:space-y-4">
-        <h1 style={{ fontFamily: "Inter, sans-serif" }} className="text-[#af1816] text-4xl sm:text-5xl md:text-6xl font-bold">
+        <h1 data-aos="fade-up" data-aos-delay="100" style={{ fontFamily: "Inter, sans-serif" }} className="text-[#af1816] text-4xl sm:text-5xl md:text-6xl font-bold">
           VESPA OTOMASYON
         </h1>
 
-        <p style={{ fontFamily: "Poppins, sans-serif" }} className="text-lg sm:text-xl md:text-xl text-[#af1816] dark:text-white">
+        <p data-aos="fade-up" data-aos-delay="300" style={{ fontFamily: "Poppins, sans-serif" }} className="text-lg sm:text-xl md:text-xl text-[#af1816] dark:text-white">
           OTOMATİK KAPI SİSTEMLERİNDE GÜVENİLİR ÇÖZÜM ORTAĞINIZ
         </p>
 
-        <p className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-i">
+        <p data-aos="fade-up" data-aos-delay="500" className="text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed font-i">
           <span className="font-semibold text-[#af1816]">Vespa Otomasyon</span>, geçiş kontrol çözümleri, güvenlik sistemleri ve akıllı otomasyon alanlarında
           yenilikçi hizmet anlayışıyla sektörde fark yaratıyor.
         </p>
 
-        <ul className="space-y-2 sm:space-y-3 text-gray-800 dark:text-white text-base sm:text-lg" style={{ fontFamily: "Poppins, sans-serif" }}>
+        <ul data-aos="fade-up" data-aos-delay="600" className="space-y-2 sm:space-y-3 text-gray-800 dark:text-white text-base sm:text-lg" style={{ fontFamily: "Poppins, sans-serif" }}>
           {[
             "10+ Yıllık Sektör Deneyimi ve Güvenilir Hizmet",
             "Türkiye Genelinde Yüzlerce Başarılı Proje",
@@ -66,6 +66,7 @@ const Hero = () => {
 
         <div className="flex flex-wrap gap-3 sm:gap-5 pt-3 md:pt-5">
           <button
+            data-aos="fade-right" data-aos-delay="900"
             onClick={handleSolutions}
             style={{ fontFamily: "Inter, sans-serif" }}
             className="bg-[#af1816] hover:bg-[#c94643] text-white px-6 sm:px-7 py-3 sm:py-4 rounded-full font-semibold tracking-wide shadow-lg transition-all"
@@ -73,6 +74,7 @@ const Hero = () => {
             ÇÖZÜMLERİ İNCELE
           </button>
           <button
+            data-aos="fade-right" data-aos-delay="700"
             onClick={handleContact}
             style={{ fontFamily: "Inter, sans-serif" }}
             className="border border-[#af1816] hover:bg-[#af1816] hover:text-white text-[#af1816] px-6 sm:px-7 py-3 sm:py-4 rounded-full font-semibold tracking-wide shadow-md transition-all"
@@ -82,7 +84,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 space-y-3 sm:space-y-4 md:space-y-5">
+      <div data-aos="fade-up" data-aos-delay="300" className="w-full md:w-1/2 space-y-3 sm:space-y-4 md:space-y-5">
         <div className="aspect-video rounded-xl overflow-hidden shadow-xl border-4 border-[#af1816]">
           <img
             src={selectedImage}
@@ -93,7 +95,7 @@ const Hero = () => {
 
         <Slider {...sliderSettings} className="mt-2">
           {images.map((img, i) => (
-            <div key={i} className="px-2 cursor-pointer">
+            <div data-aos="fade-right" data-aos-delay="700" key={i} className="px-2 cursor-pointer">
               <div
                 onClick={() => setSelectedImage(img)}
                 className={`overflow-hidden rounded-lg border-2 ${selectedImage === img
