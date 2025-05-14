@@ -8,6 +8,13 @@ import foto5 from '../assets/foto5.jpg';
 import foto6 from '../assets/foto6.jpg';
 import foto7 from '../assets/foto7.jpg';
 import foto8 from '../assets/foto8.jpg';
+import video1 from '../assets/video1.png';
+import video2 from '../assets/video2.png';
+import video4 from '../assets/video4.png';
+import video6 from '../assets/video6.png';
+import video7 from '../assets/video7.png';
+import video8 from '../assets/video8.png';
+import video10 from '../assets/video10.png';
 
 const Media = () => {
     const [selectedMedia, setSelectedMedia] = useState(null);
@@ -22,13 +29,13 @@ const Media = () => {
     }, []);
 
     const mediaList = [
-        { type: 'video', src: '/video8.mp4', cover: '/video8.png' },
-        { type: 'video', src: '/video1.mp4', cover: '/video1.png' },
-        { type: 'video', src: '/video4.mp4', cover: '/video4.png' },
-        { type: 'video', src: '/video6.mp4', cover: '/video6.png' },
-        { type: 'video', src: '/video7.mp4', cover: '/video7.png' },
-        { type: 'video', src: '/video2.mp4', cover: '/video2.png' },
-        { type: 'video', src: '/video10.mp4', cover: '/video10.png' },
+        { type: 'video', src: '/video8.mp4', cover: video8 },
+        { type: 'video', src: '/video1.mp4', cover: video1 },
+        { type: 'video', src: '/video4.mp4', cover: video4 },
+        { type: 'video', src: '/video6.mp4', cover: video6 },
+        { type: 'video', src: '/video7.mp4', cover: video7 },
+        { type: 'video', src: '/video2.mp4', cover: video2 },
+        { type: 'video', src: '/video10.mp4', cover: video10 },
         { type: 'image', src: foto1 },
         { type: 'image', src: foto2 },
         { type: 'image', src: foto3 },
