@@ -95,7 +95,7 @@ const Hero = () => {
 
         <Slider {...sliderSettings} className="mt-2">
           {images.map((img, i) => (
-            <div data-aos="fade-right" data-aos-delay="700" key={i} className="px-2 cursor-pointer">
+            <div data-aos="fade-right" data-aos-delay="400" key={i} className="px-2 cursor-pointer">
               <div
                 onClick={() => setSelectedImage(img)}
                 className={`overflow-hidden rounded-lg border-2 ${selectedImage === img
