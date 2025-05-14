@@ -12,10 +12,10 @@ import { FaCheckCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
-  const [selectedImage, setSelectedImage] = useState(slider1);
+  const [selectedImage, setSelectedImage] = useState(slider2);
   const navigate = useNavigate();
 
-  const images = [slider1, slider2, slider3, slider4, slider5, slider6];
+  const images = [slider2, slider1, slider3, slider4, slider5, slider6];
 
   const sliderSettings = {
     dots: false,
