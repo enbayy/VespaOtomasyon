@@ -14,10 +14,10 @@ const Footer = () => {
                             <img src={logo} alt="VESPA" className="w-60 md:w-60" />
                         </div>
                         <div className="flex space-x-10 mt-8">
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/vespakapi/?locale=tr_TR" target="_blank" rel="noopener noreferrer">
                                 <SiFacebook size={35} className="text-white text-2xl hover:text-blue-500 transition-colors duration-300" />
                             </a>
-                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.youtube.com/@vespaotomatikkapisistemler5148/featured" target="_blank" rel="noopener noreferrer">
                                 <FaYoutube size={35} className="text-white text-2xl hover:text-blue-500 transition-colors duration-300" />
                             </a>
                             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
@@ -34,37 +34,37 @@ const Footer = () => {
                         <h4 style={{ fontFamily: "Inter, sans-serif" }} className="text-white text-2xl font-medium mb-4">HIZLI ERİŞİM</h4>
                         <ul className="space-y-2 text-center md:text-left">
                             <li>
-                                <a style={{ fontFamily: "Poppins, sans-serif" }} href="/" className="text-lg text-white hover:underline transition-colors flex items-center gap-2">
+                                <a style={{ fontFamily: "Poppins, sans-serif" }} href="#" className="text-lg text-white hover:underline transition-colors flex items-center gap-2">
                                     <HiOutlineArrowNarrowRight className="text-white text-base" />
                                     ANASAYFA
                                 </a>
                             </li>
                             <li>
-                                <a style={{ fontFamily: "Poppins, sans-serif" }} href="/urunler" className="text-lg text-white hover:underline transition-colors flex items-center gap-2">
+                                <a style={{ fontFamily: "Poppins, sans-serif" }} href="#urunler" className="text-lg text-white hover:underline transition-colors flex items-center gap-2">
                                     <HiOutlineArrowNarrowRight className="text-white text-base" />
                                     ÜRÜNLER
                                 </a>
                             </li>
                             <li>
-                                <a style={{ fontFamily: "Poppins, sans-serif" }} href="/cozumler" className="text-lg text-white hover:underline transition-colors flex items-center gap-2">
+                                <a style={{ fontFamily: "Poppins, sans-serif" }} href="#cozumler" className="text-lg text-white hover:underline transition-colors flex items-center gap-2">
                                     <HiOutlineArrowNarrowRight className="text-white text-base" />
                                     ÇÖZÜMLER
                                 </a>
                             </li>
                             <li>
-                                <a style={{ fontFamily: "Poppins, sans-serif" }} href="/hakkimizda" className="text-lg text-white hover:underline transition-colors flex items-center gap-2">
+                                <a style={{ fontFamily: "Poppins, sans-serif" }} href="#hakkimizda" className="text-lg text-white hover:underline transition-colors flex items-center gap-2">
                                     <HiOutlineArrowNarrowRight className="text-white text-base" />
                                     HAKKIMIZDA
                                 </a>
                             </li>
                             <li>
-                                <a style={{ fontFamily: "Poppins, sans-serif" }} href="/medya" className="text-lg text-white hover:underline transition-colors flex items-center gap-2">
+                                <a style={{ fontFamily: "Poppins, sans-serif" }} href="#medya" className="text-lg text-white hover:underline transition-colors flex items-center gap-2">
                                     <HiOutlineArrowNarrowRight className="text-white text-base" />
                                     MEDYA
                                 </a>
                             </li>
                             <li>
-                                <a style={{ fontFamily: "Poppins, sans-serif" }} href="/iletisim" className="text-lg text-white hover:underline transition-colors flex items-center gap-2">
+                                <a style={{ fontFamily: "Poppins, sans-serif" }} href="#iletisim" className="text-lg text-white hover:underline transition-colors flex items-center gap-2">
                                     <HiOutlineArrowNarrowRight className="text-white text-base" />
                                     İLETİŞİM
                                 </a>

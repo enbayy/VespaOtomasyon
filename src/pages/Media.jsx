@@ -13,13 +13,13 @@ const Media = () => {
     const [selectedMedia, setSelectedMedia] = useState(null);
 
     const mediaList = [
-        { type: 'video', src: '/video8.mp4' },
-        { type: 'video', src: '/video1.mp4' },
-        { type: 'video', src: '/video4.mp4' },
-        { type: 'video', src: '/video6.mp4' },
-        { type: 'video', src: '/video7.mp4' },
-        { type: 'video', src: '/video2.mp4' },
-        { type: 'video', src: '/video10.mp4' },
+        { type: 'video', src: '/video8.mp4', cover: '/video8.png' },
+        { type: 'video', src: '/video1.mp4', cover: '/video1.png' },
+        { type: 'video', src: '/video4.mp4', cover: '/video4.png' },
+        { type: 'video', src: '/video6.mp4', cover: '/video6.png' },
+        { type: 'video', src: '/video7.mp4', cover: '/video7.png' },
+        { type: 'video', src: '/video2.mp4', cover: '/video2.png' },
+        { type: 'video', src: '/video10.mp4', cover: '/video10.png' },
         { type: 'image', src: foto1 },
         { type: 'image', src: foto2 },
         { type: 'image', src: foto3 },
@@ -56,27 +56,18 @@ const Media = () => {
                                 className="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105"
                             />
                         ) : (
-                            <video
-                                src={media.src}
-                                className="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105"
-                                muted
-                                loop
-                                playsInline
-                            />
-                        )}
-                        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center space-y-2 text-white">
-                            {media.type === 'image' ? (
-                                <>
-                                    <Camera className="w-6 h-6" />
-                                    <span className="text-sm">Fotoğrafı Görüntüle</span>
-                                </>
-                            ) : (
-                                <>
+                            <div className="relative w-full h-60">
+                                <img
+                                    src={media.cover}
+                                    alt={`Video Cover ${index + 1}`}
+                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                />
+                                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
                                     <Video className="w-6 h-6" />
                                     <span className="text-sm">Videoyu Oynat</span>
-                                </>
-                            )}
-                        </div>
+                                </div>
+                            </div>
+                        )}
                         <div className="absolute top-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded-full flex items-center gap-1">
                             {media.type === 'image' ? <Camera size={14} /> : <Video size={14} />}
                             {media.type === 'image' ? 'Fotoğraf' : 'Video'}
