@@ -35,7 +35,7 @@ const AboutHome = () => {
                     className="flex justify-center md:justify-end"
                     data-aos="zoom-in"
                 >
-                    <div className="bg-white dark:bg-gray-900 p-6 rounded-full shadow-lg hover:scale-105 transition duration-300">
+                    <div className="bg-white p-6 rounded-full shadow-lg hover:scale-105 transition duration-300">
                         <img
                             src={logo}
                             alt="Vespa Otomasyon Logo"
