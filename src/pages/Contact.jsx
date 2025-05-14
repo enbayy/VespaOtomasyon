@@ -4,7 +4,7 @@ import { MapPin, Phone, Globe, Mail } from "lucide-react";
 const ContactSection = () => {
   return (
     <section className="bg-white dark:bg-black">
-      <div className="container mx-auto px-6 md:px-12 lg:px-24 py-0 md:py-8">
+      <div className="container mx-auto px-6 md:px-12 lg:px-24 py-4 md:py-8">
         <div className="flex flex-col lg:flex-row gap-12">
           <div className="w-full lg:w-1/2 bg-white dark:bg-black rounded-xl p-10">
             <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-3xl font-semibold text-gray-800 dark:text-white mb-8 text-start font-sans">İLETİŞİM FORMU</h3>
