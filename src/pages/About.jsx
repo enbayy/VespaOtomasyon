@@ -6,7 +6,7 @@ import feature2 from '../assets/foto3.jpg';
 const About = () => {
   return (
     <section className="bg-white text-gray-800">
-      <div className="relative bg-white dark:bg-black py-8 md:py-20 px-6 md:px-20">
+      <div className="container relative bg-white dark:bg-black py-8 md:py-20 px-6 md:px-20">
         <div className="grid md:grid-cols-2 items-center gap-10">
           <div>
             <h1 style={{ fontFamily: "Inter, sans-serif" }} className="text-4xl md:text-5xl font-bold text-[#af1816] dark:text-white mb-6" data-aos="fade-up">
@@ -87,12 +87,12 @@ const About = () => {
 
       <div className="grid md:grid-cols-2 gap-10 items-center py-20 px-6 md:px-20 bg-white dark:bg-black">
         <div className="order-2 md:order-1" data-aos="fade-right">
-          <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-2xl font-semibold text-[#af1816] dark:text-white mb-4">Vizyonumuz & Misyonumuz</h3>
+          <h3 style={{ fontFamily: "Inter, sans-serif" }} className="text-2xl font-semibold text-[#af1816] dark:text-white mb-4">Vizyon ve Misyon</h3>
           <p style={{ fontFamily: "Inter, sans-serif" }} className="text-lg text-gray-700 dark:text-white mb-4">
-            <strong >Vizyonumuz:</strong> Türkiye genelinde ve uluslararası alanda, güvenlik teknolojileri denildiğinde ilk akla gelen, inovatif çözümleriyle sektöre yön veren bir marka olmaktır.
+            <strong>Vizyonumuz:</strong> Güvenlik teknolojileri alanında sektöre yön veren, yenilikçi çözümleriyle tanınan bir marka olmak.
           </p>
           <p style={{ fontFamily: "Inter, sans-serif" }} className="text-lg text-gray-700 dark:text-white">
-            <strong>Misyonumuz:</strong> Müşterilerimizin ihtiyaçlarını doğru analiz ederek, kaliteli ürün ve sürdürülebilir hizmet anlayışıyla en etkili güvenlik çözümlerini sunmak.
+            <strong>Misyonumuz:</strong> Müşterilerimizin ihtiyaçlarını doğru bir şekilde analiz ederek, kaliteli ürünler ve sürdürülebilir hizmet anlayışı ile en etkili güvenlik çözümlerini sunmak.
           </p>
         </div>
         <div className="order-1 md:order-2" data-aos="fade-left">
@@ -103,6 +103,7 @@ const About = () => {
           />
         </div>
       </div>
+
     </section>
   );
 };
