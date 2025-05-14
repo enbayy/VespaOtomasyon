@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, Camera, Video } from 'lucide-react';
 import foto1 from '../assets/foto1.jpg';
 import foto2 from '../assets/foto2.jpg';
@@ -11,6 +11,15 @@ import foto8 from '../assets/foto8.jpg';
 
 const Media = () => {
     const [selectedMedia, setSelectedMedia] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 2000);
+
+        return () => clearTimeout(timer);
+    }, []);
 
     const mediaList = [
         { type: 'video', src: '/video8.mp4', cover: '/video8.png' },
@@ -38,6 +47,10 @@ const Media = () => {
         setSelectedMedia(null);
     };
 
+    const handleMediaLoad = () => {
+        setLoading(false);
+    };
+
     return (
         <div className="bg-white dark:bg-black w-full p-4 space-y-6">
             <h2 style={{ fontFamily: "Inter, sans-serif" }} className="text-2xl font-bold text-center text-black dark:text-white">MEDYA GALERİSİ</h2>
@@ -54,6 +67,7 @@ const Media = () => {
                                 src={media.src}
                                 alt={`Media ${index + 1}`}
                                 className="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-105"
+                                onLoad={handleMediaLoad}
                             />
                         ) : (
                             <div className="relative w-full h-60">
@@ -61,6 +75,7 @@ const Media = () => {
                                     src={media.cover}
                                     alt={`Video Cover ${index + 1}`}
                                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                    onLoad={handleMediaLoad}
                                 />
                                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
                                     <Video className="w-6 h-6" />
@@ -75,6 +90,13 @@ const Media = () => {
                     </div>
                 ))}
             </div>
+
+            {loading && (
+                <div className="absolute inset-0 flex items-center justify-center z-50">
+                    <div className="animate-spin rounded-full border-t-2 border-b-2 border-[#af1816] w-16 h-16"></div>
+                </div>
+            )}
+
             {selectedMedia && (
                 <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
                     <div className="relative max-w-4xl w-full px-4">
