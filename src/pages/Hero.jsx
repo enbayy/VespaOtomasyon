@@ -10,6 +10,9 @@ import slider5 from "../assets/foto10.jpg";
 import slider6 from "../assets/foto11.jpg";
 import slider7 from "../assets/foto5.jpg";
 import slider8 from "../assets/foto6.jpg";
+import slider9 from "../assets/foto13.jpg";
+import slider10 from "../assets/foto14.jpg";
+import slider11 from "../assets/foto15.png";
 import { FaCheckCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
@@ -17,7 +20,7 @@ const Hero = () => {
   const [selectedImage, setSelectedImage] = useState(slider2);
   const navigate = useNavigate();
 
-  const images = [slider2, slider8, slider1, slider7, slider3, slider4, slider5, slider6];
+  const images = [slider2, slider8, slider1, slider7, slider3, slider9, slider4, slider5, slider6, slider10, slider11];
 
   const sliderSettings = {
     dots: false,

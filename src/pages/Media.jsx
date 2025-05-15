@@ -8,6 +8,14 @@ import foto5 from '../assets/foto5.jpg';
 import foto6 from '../assets/foto6.jpg';
 import foto7 from '../assets/foto7.jpg';
 import foto8 from '../assets/foto8.jpg';
+import foto9 from '../assets/foto9.jpg';
+import foto10 from '../assets/foto10.jpg';
+import foto11 from '../assets/foto11.jpg';
+import foto12 from '../assets/foto12.jpg';
+import foto13 from '../assets/foto13.jpg';
+import foto14 from '../assets/foto14.jpg';
+import foto15 from '../assets/foto15.jpg';
+import foto16 from '../assets/foto16.jpg';
 import video1 from '../assets/video1.png';
 import video2 from '../assets/video2.png';
 import video4 from '../assets/video4.png';
@@ -44,6 +52,14 @@ const Media = () => {
         { type: 'image', src: foto6 },
         { type: 'image', src: foto7 },
         { type: 'image', src: foto8 },
+        { type: 'image', src: foto9 },
+        { type: 'image', src: foto10 },
+        { type: 'image', src: foto11 },
+        { type: 'image', src: foto12 },
+        { type: 'image', src: foto13 },
+        { type: 'image', src: foto14 },
+        { type: 'image', src: foto15 },
+        { type: 'image', src: foto16 },
     ];
 
     const openMedia = (media) => {
@@ -105,7 +121,7 @@ const Media = () => {
             )}
 
             {selectedMedia && (
-                <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
                     <div className="relative max-w-4xl w-full px-4">
                         <div className="w-full flex justify-center items-center">
                             <div className="relative">

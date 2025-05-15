@@ -12,7 +12,7 @@ const ContactSection = () => {
                         <div data-aos="fade-up" data-aos-delay="300" className="flex items-start gap-6">
                             <MapPin className="text-[#af1816]" />
                             <p style={{ fontFamily: "Poppins, sans-serif" }} className="text-gray-700 dark:text-white font-semibold text-lg">
-                                Fevzi çakmak mahallesi 10655. sokak No: 59 Karatay Konya
+                                Fevzi çakmak mahallesi 10655. sokak No: 65 Karatay Konya
                             </p>
                         </div>
                         <div data-aos="fade-up" data-aos-delay="500" className="flex items-start gap-6">

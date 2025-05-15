@@ -84,7 +84,7 @@ const Footer = () => {
                         <p style={{ fontFamily: "Poppins, sans-serif" }} className="text-lg text-white leading-relaxed">
                             Fevzi çakmak mahallesi 10655. sokak
                             <br />
-                            No: 59 Karatay Konya
+                            No: 65 Karatay Konya
                         </p>
                     </div>
                 </div>

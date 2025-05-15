@@ -67,7 +67,7 @@ const ContactSection = () => {
               <div className="flex items-start gap-6">
                 <MapPin className="text-[#af1816] dark:text-white" />
                 <p style={{ fontFamily: "Inter, sans-serif" }} className="text-gray-700 dark:text-white font-semibold">
-                  Fevzi çakmak mahallesi 10655. sokak No: 59 Karatay Konya
+                  Fevzi çakmak mahallesi 10655. sokak No: 65 Karatay Konya
                 </p>
               </div>
               <div className="flex items-start gap-6">
