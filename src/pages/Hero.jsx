@@ -8,6 +8,8 @@ import slider3 from "../assets/foto7.jpg";
 import slider4 from "../assets/foto9.jpg";
 import slider5 from "../assets/foto10.jpg";
 import slider6 from "../assets/foto11.jpg";
+import slider7 from "../assets/foto5.jpg";
+import slider8 from "../assets/foto6.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
@@ -15,7 +17,7 @@ const Hero = () => {
   const [selectedImage, setSelectedImage] = useState(slider2);
   const navigate = useNavigate();
 
-  const images = [slider2, slider1, slider3, slider4, slider5, slider6];
+  const images = [slider2, slider8, slider1, slider7, slider3, slider4, slider5, slider6];
 
   const sliderSettings = {
     dots: false,
@@ -23,8 +25,10 @@ const Hero = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
     arrows: true,
+    beforeChange: (current, next) => setSelectedImage(images[next % images.length]),
     responsive: [
       { breakpoint: 768, settings: { slidesToShow: 2 } },
       { breakpoint: 480, settings: { slidesToShow: 1 } },
