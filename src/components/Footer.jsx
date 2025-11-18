@@ -82,7 +82,7 @@ const Footer = () => {
                     <div className="flex flex-col items-center md:items-start text-center md:text-left">
                         <h4 style={{ fontFamily: "Inter, sans-serif" }} className="text-white text-2xl font-semibold mb-4">KONUM</h4>
                         <p style={{ fontFamily: "Poppins, sans-serif" }} className="text-lg text-white leading-relaxed">
-                            Fevzi çakmak mahallesi Hüdai Caddesi
+                            Fevziçakmak mahallesi Hüdai Caddesi
                             <br />
                             No: 133/B Karatay Konya
                         </p>
